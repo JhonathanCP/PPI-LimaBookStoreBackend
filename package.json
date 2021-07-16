@@ -4,7 +4,9 @@
   "description": "��#\u0000 \u0000P\u0000P\u0000I\u0000-\u0000L\u0000i\u0000m\u0000a\u0000B\u0000o\u0000o\u0000k\u0000S\u0000t\u0000o\u0000r\u0000e\u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.js --exec babel-node"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/JhonathanCP/PPI-LimaBookStoreBackend/issues"
   },
-  "homepage": "https://github.com/JhonathanCP/PPI-LimaBookStoreBackend#readme"
+  "homepage": "https://github.com/JhonathanCP/PPI-LimaBookStoreBackend#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "babel-cli": "^6.26.0"
+  }
 }
